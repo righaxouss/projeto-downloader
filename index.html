@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor URL</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 40px;
+
+            
+        }
+
+      #h1 {
+        padding: 10px;
+        margin: 0px;
+            font-size: 2.3em;
+            text-align: center;
+            color: #5E5E5E;
+        }
+
+        #paragrafo-abaixo-do-titulo{
+            
+            font-size: 1.5em;
+            color: #6C757D;
+            text-align: center;
+        }
+
+
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+       
+        #videoUrl {
+
+            
+            width: 100%;
+          padding: 10px;
+            font-size: 16px;
+            border-radius: 4px 0px 0px 4px;
+            border: 1px solid #ccc;
+        }
+
+        #submit{ 
+
+            color: #6C757D;
+            font-size: 1.1em;
+        }
+
+       
+        
+        button {
+            font-size: 1.1em;
+            display: block;
+            width: 250px;
+            
+           
+        
+            background-color: #00B887;
+            color: #fff;
+            border: none;
+            border-radius: 0px 4px 4px 0px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #048562;
+        }
+
+       
+        .loading-message {
+            text-align: center;
+            color: #333;
+            margin-top: 20px;
+            display: none;
+
+        }
+
+        span{
+            color: #00B887;
+            font-size: 1.2em;
+
+        }
+
+        .input-button{
+        display: flex;
+         
+
+        }
+
+       main{
+        font-size: 1.1em;
+        color: #6C757D;
+        text-align: center;
+        height: 100vh;
+padding: 20px;
+        background-color: #FFFFFF;
+       }
+
+       .etapas{
+
+display: flex;
+
+
+       }
+
+    </style>
+    <script>
+        function showLoadingMessage() {
+            document.getElementById('loadingMessage').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <p id="h1"><span>Conversor</span> para MP3</p>
+        <p id="paragrafo-abaixo-do-titulo" >Baixe e salve vídeos do YouTube gratuitamente</p>
+        <form action="/download" method="POST" onsubmit="showLoadingMessage()">
+            <label id="submit" for="videoUrl">URL da Música:</label>
+            <div class="input-button">
+                <input  type="text" id="videoUrl" name="videoUrl" required>
+                
+                
+                <button  type="submit">Baixar Música</button>
+            </div>
+            <p id="submit">Ao usar nosso serviço, você aceita nossos <span>Termos de Serviço</span></p>
+
+
+        </form>
+        <div id="loadingMessage" class="loading-message">
+            Baixando...
+        </div>
+    </div>
+
+    <main>
+
+        <div>
+            <p id="h1" >Como baixar o vídeo do YouTube online?</p>
+            <p  >Você pode baixar facilmente vídeos do YouTube online em 3 etapas:</p>
+            <img src="Design sem nome (1).png" alt="" width="700px">
+
+            <div class="etapas">
+                <p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Quidem, molestias aliquam! </p>
+<br>
+
+                <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Quidem, molestias aliquam!</p>
+<br>
+
+                <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Quidem, molestias aliquam!</p>
+
+            </div>
+        </div>
+
+
+
+    </main>
+
+
+
+</body>
+</html>
