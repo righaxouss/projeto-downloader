@@ -141,11 +141,34 @@ padding: 20px;
        }
       
     </style>
+    <!--
     <script>
         function showLoadingMessage() {
-            document.getElementById('loadingMessage').style.display = 'block';
+             document.getElementById( 'loadingMessage').style.display = 'block';
         }
-    </script>
+    </script>-->
+<script>
+
+
+    function showLoadingMessage(){
+
+        var submit = document.getElementById('submit').value;
+       
+
+        if(onclick){
+            alert('Baixando...');
+           
+            
+        }else{
+            alert('Baixando...');
+        }
+
+    }
+
+</script>
+
+
+
 </head>
 <body>
     <p class="borda" >Conversor MP3 </p>
@@ -153,12 +176,12 @@ padding: 20px;
         <p id="h1"><span>Conversor</span> para MP3</p>
         <p id="paragrafo-abaixo-do-titulo" >Baixe e salve vídeos do YouTube gratuitamente</p>
         <form action="/download" method="POST" onsubmit="showLoadingMessage()">
-            <label id="submit" for="videoUrl">URL da Música:</label>
+           
             <div class="input-button">
-                <input  type="text" id="videoUrl" name="videoUrl" required>
+                <input  type="text" id="videoUrl" name="videoUrl" placeholder="URL da Música" required>
                 
                 
-                <button  type="submit">Baixar Música</button>
+                <button id="submit" type="submit">Baixar Música</button>
             </div>
             
 
