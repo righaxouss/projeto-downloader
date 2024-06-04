@@ -6,7 +6,7 @@
     <title>Conversor URL</title>
     <style>
         body {
-            background: #181926;
+            background: linear-gradient(to right, #181926 , #0D1117, #181926);
             font-family: Arial, Helvetica, sans-serif;
             
             margin: 0;
@@ -15,6 +15,8 @@
         }
 
         .container {
+            background-color: #181926;
+        border: 2px dashed white;
             max-width: 600px;
             margin: 50px auto;
             padding: 40px;
@@ -23,16 +25,17 @@
         }
 
       #h1 {
+        font-weight: bolder;
         padding: 10px;
-        margin: 0px;
-            font-size: 2.3em;
+        
+        font-size: 2.5em;
             text-align: center;
-           color: #F5F5F5;
+           color: #E6EDF3;
         }
 
         .container > #paragrafo-abaixo-do-titulo{
-            
-            font-size: 1.8em;
+          padding-bottom: 20px;
+            font-size: 1.3em;
             color: #F5F5F5;
             text-align: center;
         }
@@ -40,6 +43,7 @@
 
 
         form {
+            padding: 20px;
             margin-top: 20px;
         }
 
@@ -117,6 +121,8 @@ padding: 40px;
        }
 
        .etapas{
+        background: linear-gradient(to right, #0d111707 , #181926, #0d111700);
+
 
 text-align: center;
 
@@ -173,7 +179,7 @@ padding: 20px;
 <body>
     <p class="borda" >Conversor MP3 </p>
     <div class="container">
-        <p id="h1"><span>Conversor</span> para MP3</p>
+        <p id="h1">Conversor MP3</p>
         <p id="paragrafo-abaixo-do-titulo" >Baixe e salve vídeos do YouTube gratuitamente</p>
         <form action="/download" method="POST" onsubmit="showLoadingMessage()">
            
@@ -197,23 +203,24 @@ padding: 20px;
     
             <div>
                 <p id="h1" >Como baixar o vídeo do YouTube online?</p>
-                <p  >Você pode baixar facilmente vídeos do YouTube online em 3 etapas:</p>
+                <br>
+                <br>
+                
                 
     
     
                    
                         <div class="etapas">
-                            <br><br><br><br>
+                            <br><br>
+                            <p  >Você pode baixar facilmente vídeos do YouTube online em 3 etapas:</p>
+                            <br><br>
                             <p class="etapap">Etapa 1:</p>
                             <p id="etapa1">Copie a URL da música que você precisa baixar. </p>
                         <br>
                         <p class="etapap">Etapa 2:</p>
                             <p id="etapa2">Cole a URL no campo Pesquisar e clique no botão <br> "baixar" para iniciar o processo de download.</p>
                         <br>
-                        <p class="etapap">Etapa 3:</p>
-                            <p id="etapa3">Escolha a taxa de bits <span>MP3</span> ou a qualidade <span>MP4</span>
-                                para <br> fazer  o download do arquivo em seus dispositivos.
-                                </p>
+                        
                         </div>
                   
             </div>
